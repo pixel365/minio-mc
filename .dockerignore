@@ -1,0 +1,13 @@
+.git
+.github
+.idea
+.vscode
+.bin
+.run*
+mc
+mc.*
+release
+vendor
+*.test
+cover.out
+coverage.txt

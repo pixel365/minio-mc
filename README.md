@@ -53,20 +53,20 @@ MinIO Client (mc) provides a modern alternative to UNIX commands like ls, cat, c
 ## Docker Container
 ### Stable
 ```
-docker pull minio/mc
-docker run minio/mc ls play
+docker pull ghcr.io/pixel365/mc
+docker run ghcr.io/pixel365/mc ls play
 ```
 
 ### Edge
 ```
-docker pull minio/mc:edge
-docker run minio/mc:edge ls play
+docker pull ghcr.io/pixel365/mc:edge
+docker run ghcr.io/pixel365/mc:edge ls play
 ```
 
 **Note:** Above examples run `mc` against MinIO [_play_ environment](#test-your-setup) by default. To run `mc` against other S3 compatible servers, start the container this way:
 
 ```
-docker run -it --entrypoint=/bin/sh minio/mc
+docker run -it --entrypoint=/bin/sh ghcr.io/pixel365/mc
 ```
 
 then use the [`mc alias` command](#add-a-cloud-storage-service).
@@ -77,7 +77,7 @@ When using the Docker container in GitLab CI, you must [set the entrypoint to an
 ```
 deploy:
   image:
-    name: minio/mc
+    name: ghcr.io/pixel365/mc
     entrypoint: ['']
   stage: deploy
   before_script:
