@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-ARG GO_VERSION=1.24
+ARG GO_VERSION=1.27
 ARG UBI_VERSION=9.8
 
 # Cross-compile natively on the build platform; Go does not need emulation.
